@@ -3,9 +3,10 @@ numpy
 scikit-learn
 matplotlib
 seaborn
-XGBoost
-LightGBM
-CatBoost
+xgboost
+lightgbm
+catboost
 imbalanced-learn
 flask
 pymongo
+polars

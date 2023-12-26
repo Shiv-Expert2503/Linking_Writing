@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JupyterPersistentConnectionParameters">
+    <option name="moduleParameters">
+      <map>
+        <entry key="$PROJECT_DIR$/.idea/Linking_Writting.iml">
+          <value>
+            <JupyterConnectionParameters>
+              <option name="managed" value="true" />
+              <option name="sdkName" value="" />
+              <option name="environmentVariables">
+                <map>
+                  <entry name="APPDATA" value="C:\Users\Dell\AppData\Roaming" />
+                  <entry name="CLion" value="C:\Program Files\JetBrains\CLion 2023.2.2\bin;" />
+                  <entry name="COMPUTERNAME" value="DESKTOP-GF8QPKE" />
+                  <entry name="ComSpec" value="C:\Windows\system32\cmd.exe" />
+                  <entry name="CommonProgramFiles" value="C:\Program Files\Common Files" />
+                  <entry name="CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files" />
+                  <entry name="CommonProgramW6432" value="C:\Program Files\Common Files" />
+                  <entry name="DataSpell" value="C:\Program Files\JetBrains\DataSpell 2023.3.2\bin;" />
+                  <entry name="DriverData" value="C:\Windows\System32\Drivers\DriverData" />
+                  <entry name="EFC_7864" value="1" />
+                  <entry name="HOMEDRIVE" value="$PROJECT_DIR$/../../../../.." />
+                  <entry name="HOMEPATH" value="\Users\Dell" />
+                  <entry name="IDEA_INITIAL_DIRECTORY" value="C:\Users\Dell" />
+                  <entry name="IJ_RESTARTER_LOG" value="C:\Users\Dell\AppData\Local\JetBrains\DataSpell2023.3\log\restarter.log" />
+                  <entry name="LOCALAPPDATA" value="C:\Users\Dell\AppData\Local" />
+                  <entry name="LOGONSERVER" value="\\DESKTOP-GF8QPKE" />
+                  <entry name="NUMBER_OF_PROCESSORS" value="12" />
+                  <entry name="OS" value="Windows_NT" />
+                  <entry name="OneDrive" value="C:\Users\Dell\OneDrive" />
+                  <entry name="OneDriveConsumer" value="C:\Users\Dell\OneDrive" />
+                  <entry name="PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC" />
+                  <entry name="PROCESSOR_ARCHITECTURE" value="AMD64" />
+                  <entry name="PROCESSOR_IDENTIFIER" value="AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD" />
+                  <entry name="PROCESSOR_LEVEL" value="25" />
+                  <entry name="PROCESSOR_REVISION" value="5000" />
+                  <entry name="PSModulePath" value="C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules" />
+                  <entry name="PUBLIC" value="C:\Users\Public" />
+                  <entry name="Path" value="C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\MinGW\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Users\Dell\AppData\Local\Programs\Python\Launcher\;C:\Users\Dell\anaconda3;C:\Users\Dell\anaconda3\Library\mingw-w64\bin;C:\Users\Dell\anaconda3\Library\usr\bin;C:\Users\Dell\anaconda3\Library\bin;C:\Users\Dell\anaconda3\Scripts;C:\Users\Dell\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm 2023.2.3\bin;;C:\Program Files\JetBrains\DataSpell 2023.3.2\bin;;C:\Program Files\JetBrains\CLion 2023.2.2\bin;;C:\Users\Dell\AppData\Local\ffmpegio\ffmpeg-downloader\ffmpeg\bin;C:\Users\Dell\AppData\Local\Programs\Microsoft VS Code\bin" />
+                  <entry name="ProgramData" value="C:\ProgramData" />
+                  <entry name="ProgramFiles" value="C:\Program Files" />
+                  <entry name="ProgramFiles(x86)" value="C:\Program Files (x86)" />
+                  <entry name="ProgramW6432" value="C:\Program Files" />
+                  <entry name="PyCharm" value="C:\Program Files\JetBrains\PyCharm 2023.2.3\bin;" />
+                  <entry name="SESSIONNAME" value="Console" />
+                  <entry name="SystemDrive" value="$PROJECT_DIR$/../../../../.." />
+                  <entry name="SystemRoot" value="C:\Windows" />
+                  <entry name="TEMP" value="C:\Users\Dell\AppData\Local\Temp" />
+                  <entry name="TMP" value="C:\Users\Dell\AppData\Local\Temp" />
+                  <entry name="USERDOMAIN" value="DESKTOP-GF8QPKE" />
+                  <entry name="USERDOMAIN_ROAMINGPROFILE" value="DESKTOP-GF8QPKE" />
+                  <entry name="USERNAME" value="Dell" />
+                  <entry name="USERPROFILE" value="C:\Users\Dell" />
+                  <entry name="VBOX_HWVIRTEX_IGNORE_SVM_IN_USE" value="1" />
+                  <entry name="windir" value="C:\Windows" />
+                </map>
+              </option>
+            </JupyterConnectionParameters>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
