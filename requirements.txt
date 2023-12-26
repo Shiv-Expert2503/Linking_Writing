@@ -10,3 +10,4 @@ imbalanced-learn
 flask
 pymongo
 polars
+pyarrow

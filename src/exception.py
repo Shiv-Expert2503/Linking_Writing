@@ -13,6 +13,10 @@ def error_message_detail(error, error_detail: sys):
 
 
 class CustomException(Exception):
+    """
+    Custom exception class to log the exception message in a file
+    :param error_message: Error message in string format
+    """
     def __init__(self, error_message, error_detail: sys):
         super.__init__(error_message)
 
