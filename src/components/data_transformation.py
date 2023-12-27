@@ -6,7 +6,6 @@ import numpy as np
 import pandas as pd
 import polars as pl
 from scipy.stats import skew
-from sklearn.model_selection import StratifiedKFold
 from src.logger import logging
 from src.exception import CustomException
 import warnings
