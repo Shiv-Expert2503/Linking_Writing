@@ -1,14 +1,16 @@
 import os
 import re
 import sys
+import warnings
 from dataclasses import dataclass
+
 import numpy as np
 import pandas as pd
 import polars as pl
 from scipy.stats import skew
-from src.logger import logging
+
 from src.exception import CustomException
-import warnings
+from src.logger import logging
 
 warnings.filterwarnings("ignore")
 
@@ -255,8 +257,6 @@ def handle_null(df):
 @dataclass
 class DataTransformationConfig:
     preprocessor_path: str = os.path.abspath(os.path.join(os.getcwd(), '..', '..', 'artifacts', 'preprocessor.pkl'))
-    train_arr_path: str = os.path.abspath(os.path.join(os.getcwd(), '..', '..', 'artifacts', 'train_arr.pkl'))
-    test_arr_path: str = os.path.abspath(os.path.join(os.getcwd(), '..', '..', 'artifacts', 'test_arr.pkl'))
 
 
 class DataTransformation:
@@ -265,14 +265,13 @@ class DataTransformation:
         self.data_transformation = DataTransformationConfig()
 
     @staticmethod
-    def train_essay_reconstruction(train_path, train_score_path):
+    def initiate_data_transformation(data):
         try:
             logging.info('Reading Data')
-            train_logs = pl.scan_csv(train_path)
-            train_feats = dev_feats(train_logs)
+            train_feats = dev_feats(data)
             train_feats = train_feats.collect().to_pandas()
             logging.info('Read Successfully Now reconstructing the essay')
-            train_logs = train_logs.collect().to_pandas()
+            train_logs = data.collect().to_pandas()
             train_essays = get_essay_df(train_logs)
             train_feats = train_feats.merge(word_feats(train_essays), on='id', how='left')
             train_feats = train_feats.merge(sent_feats(train_essays), on='id', how='left')
@@ -280,12 +279,12 @@ class DataTransformation:
             train_feats = train_feats.merge(get_keys_pressed_per_second(train_logs), on='id', how='left')
             train_feats = train_feats.merge(product_to_keys(train_logs, train_essays), on='id', how='left')
             logging.info('Essay reconstruction completed Now Mapping the scores')
-            train_scores = pl.scan_csv(train_score_path)
-            train_scores = train_scores.collect().to_pandas()
-            data = train_feats.merge(train_scores, on='id', how='left')
-            data = handle_null(data)
+            try:
+                train_feats = pd.merge(train_feats, train_logs[['id', 'score']].drop_duplicates(), on='id', how='inner')
+            except Exception as e:
+                pass
             logging.info(f'Mapped Successfully and Number of features in train_feats are : {len(train_feats.columns)}')
-
+            data = handle_null(train_feats)
             return data
         except Exception as e:
             logging.error("Error while initiating data transformation", exc_info=True)

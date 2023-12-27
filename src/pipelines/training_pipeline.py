@@ -10,11 +10,11 @@ if __name__ == '__main__':
     try:
         logging.info("Training Pipeline Started")
         datainject = DataIngestion()
-        train_path, train_score_path = datainject.initiate_data_ingestion()
+        data_frame = datainject.initiate_data_ingestion()
 
         # Object of data transformation class
         dd = DataTransformation()
-        data = dd.train_essay_reconstruction(train_path, train_score_path)
+        data = dd.initiate_data_transformation(data_frame)
 
         model = ModelTrainer()
         model.initiate_model_training(data)
